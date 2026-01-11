@@ -48,6 +48,8 @@ RUN apt-get update && \
 WORKDIR $HOME
 USER user
 
+ENV QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb
+
 # Autorun Telegram
 CMD ["telegram-desktop"]
 
